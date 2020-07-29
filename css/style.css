@@ -69,13 +69,13 @@ body{
     width: 100%;
 }
 
-.change-nav-bar-link{
-    color: #fff;
+
+
 }
 
-.change-nav-bar-link::after{
-    width: 130%;
-}
+
+
+
 
 .light{
     color: lightcyan !important;
@@ -424,7 +424,7 @@ img{
     }
 
     .contact{
-        bottom: -7rem;
+        bottom: 0;
         width: 17rem;
         height: 5rem;
     }
