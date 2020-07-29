@@ -411,7 +411,7 @@ img{
 
 @media(max-width: 600px){
     #home{
-        padding-top: 10rem;
+        padding-top: -5rem;
     }
 
     #home .home-text{
