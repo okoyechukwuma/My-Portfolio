@@ -411,11 +411,11 @@ img{
 
 @media(max-width: 600px){
     #home{
-        padding-top: -5rem;
+        padding-top: 0;
     }
 
     #home .home-text{
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
 
     .home-text h1{
