@@ -22,7 +22,7 @@ body{
     display: flex;
 }
 
-.mainnavbar-content i{
+.mainnavbar-content > i{
     position: absolute;
     top: 2rem;
     left: 1rem;
@@ -39,6 +39,15 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.menu-title{
+    display: none;
+}
+
+.a-box{
+    display: none;
+    
 }
 
 .nav-link{
@@ -69,13 +78,13 @@ body{
     width: 100%;
 }
 
+.change-nav-bar-link{
+    color: #fff;
+}
 
-
-
-
-
-
-
+.change-nav-bar-link::after{
+    width: 130%;
+}
 
 .light{
     color: lightcyan !important;
@@ -328,14 +337,10 @@ img{
      box-shadow: none;
  }
 
- footer{
-     position: relative;
- }
-
  footer a{
-     position: absolute;
-     right: 2rem;
-     bottom: 2rem;
+     position: fixed;
+     right: 3rem;
+     bottom: 4rem;
      color: #333;
  }
 
@@ -365,7 +370,7 @@ img{
         position: fixed;
         top: 0;
         right: 0;
-        bottom: 0;
+        bottom: -1rem;
         left: 0;
         opacity: 0;
         background: rgba(0, 0, 0, .7);
@@ -397,17 +402,64 @@ img{
     .dark{
         background: #243447;
     }
+
+    .menu-title{
+        display: block;
+        margin-top: -5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: .1rem solid #777;
+        width: 15rem;
+    }
+
+    .menu-title img{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        box-shadow: none;
+        border: .3rem solid #555; 
+        justify-self: center;
+    }
+
+    .menu-title p{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: #666;
+    }
     
     .nav-link{
         font-size: 2.5rem;
-        margin: 1rem 0;
-        padding-bottom: 1rem;
+        margin: .7rem 0;
     }
 
-    .toggler{
-        margin-top: 10rem;
+    .toggle-border{
+        border-top: .1rem solid #777;
+        width: 15rem;
+        display: grid;
+        place-items: center;
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .a-box{
+        display: flex;
+        width: 15rem;
+        justify-content: center;
+        margin-top: 4rem;
+    } 
+
+    .a-box a{
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+
+    .a-box a i{
+        font-size: 2rem;
+        color: #777;
     }
 }
+
 
 @media(max-width: 600px){
     #home{
@@ -448,10 +500,6 @@ img{
         box-shadow: 0 .6rem 1.3rem #555;
         width: 50%;
         margin: 1rem auto;
-    }
-
-    footer a{
-        bottom: 4rem;
     }
 
     .copyright{
