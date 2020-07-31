@@ -49,6 +49,7 @@ removeMenu.addEventListener('click', () => {
    
    if (currentTheme == "active") {
     body.classList.add('darktheme');
+       toggleBtn.classList.toggle('push');
     } 
 
    toggleBtn.addEventListener('click', function () {
