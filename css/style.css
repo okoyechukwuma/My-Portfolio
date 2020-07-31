@@ -345,8 +345,13 @@ img{
  footer a{
      position: fixed;
      right: 3rem;
-     bottom: 4rem;
+     bottom: -9rem;
      color: var(--clr-nav-text);
+     transition: bottom .4s linear;
+ }
+
+ .up-scroll{
+     bottom: 4rem;
  }
 
  footer a:hover{
