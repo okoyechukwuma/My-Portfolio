@@ -4,7 +4,6 @@
     --clr-toggle-background: #ccc;
     --clr-toggle-shadow: #999; 
     --clr-toggle-round: #fff;
-    --clr-nav-shadow: #999;
     --clr-html: orangered;
     --clr-css: #2449ee;
     --clr-bootstrap: rgb(98, 4, 98);
@@ -19,7 +18,8 @@
 .darktheme{
     --clr-bglight: #243447;
     --clr-text: lightcyan;
-    --clr-toggleborder: #eee;
+    --clr-toggle-shadow: #444;
+    --clr-toggle-background: #999;
     --clr--html: orangered;
     --clr--css: #2449ee;
     --clr--bootstrap: rgb(98, 4, 98);
@@ -45,7 +45,7 @@ body{
 
 .scrolled{
     background: var(--clr-bglight);
-    box-shadow: 0 .4rem 1.5rem var(--clr-nav-shadow);
+    box-shadow: 0 .4rem 1.5rem var(--clr-shadow);
     transition: background .1s linear;
 }
 
@@ -273,6 +273,7 @@ img{
     height: 100%;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 .6rem 1.2rem var(--clr-shadow);
 }
 
 .card p{
