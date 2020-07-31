@@ -79,6 +79,9 @@ removeMenu.addEventListener('click', () => {
 $(function(){
     $(document).scroll(function(){
         var $nav = $("#navbar");
+        var $scrollUp = $("#up-scroll");
+        var $home = $("#home");
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        $scrollUp.toggleClass("up-scroll", $(this).scrollTop() > $home.height());
     });
 });
