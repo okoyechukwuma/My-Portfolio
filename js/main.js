@@ -47,8 +47,8 @@ removeMenu.addEventListener('click', () => {
    let currentTheme = localStorage.getItem('currentTheme');
 
    
-   if (currentThemef == "active") {
-    body.classList.add('darktheme');
+   if (currentTheme == "active") {
+    body.classList.remove('darktheme');
        toggleBtn.classList.toggle('push');
     } 
 
