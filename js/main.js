@@ -1,4 +1,4 @@
-
+const navLinks = document.querySelectorAll(".nav-link");
 const contact = document.querySelector("#contact");
 const shadowRemove = document.querySelectorAll(".shadow-remove");
 const addContact = document.querySelector(".contact");
@@ -30,6 +30,13 @@ removeMenu.addEventListener('click', () => {
     addMenuContent.classList.remove("mainnavbar-content-display");
 });
 
+
+        Array.from(navLinks).map((navscroll) => {
+            navscroll.addEventListener('click', () => {
+            addMainMenu.classList.remove("mainnavbar-display");
+            addMenuContent.classList.remove("mainnavbar-content-display");
+            });
+        });
 
  
     let homeLen, i;
