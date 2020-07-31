@@ -398,7 +398,6 @@ img{
         padding-top: 9rem;
         box-shadow: 0 .6rem 2rem var(--clr-shadow);
         transition: right .5s;
-        transition: background .3s linear;
     }
 
     .mainnavbar-content-display{
