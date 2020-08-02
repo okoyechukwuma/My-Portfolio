@@ -355,6 +355,7 @@ img{
      position: fixed;
      right: 3rem;
      bottom: -9rem;
+     padding: .5rem 1rem;
      border-radius: 50%;
      background: var(--clr-up);
      transition: bottom .4s linear;
