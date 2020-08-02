@@ -355,7 +355,6 @@ img{
      position: fixed;
      right: 3rem;
      bottom: -9rem;
-     padding: .5rem 1rem;
      border-radius: 50%;
      background: var(--clr-up);
      transition: bottom .4s linear;
@@ -372,6 +371,7 @@ img{
  footer a i{
      font-size: 2rem;
      font-weight: bold;
+     padding: .5rem 1rem;
      color: var(--clr-up-color) !important;
  }
 
