@@ -13,10 +13,14 @@
     --clr-line: #777;
     --clr-bgtext: teal;
     --clr-shadow: #333;
+    --clr-up: #243447;
+    --clr-up-color: #fff;
 }
 
 .darktheme{
     /* --clr-bglight: #243447; */
+    --clr-up: #fff;
+    --clr-up-color: #243447;
     --clr-bglight: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQp0wghalCxbDIaiiW01LBIWMrRvAvczCwuqg&usqp=CAU");
     --clr-text: lightcyan;
     --clr-toggle-shadow: #444;
@@ -351,7 +355,8 @@ img{
      position: fixed;
      right: 3rem;
      bottom: -9rem;
-     color: var(--clr-nav-text);
+     border-radius: 50%;
+     background: var(--clr-up);
      transition: bottom .4s linear;
  }
 
@@ -366,6 +371,7 @@ img{
  footer a i{
      font-size: 2rem;
      font-weight: bold;
+     color: var(--clr-up-color) !important;
  }
 
  .copyright{
