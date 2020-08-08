@@ -325,6 +325,7 @@ img{
  #skills .php i{
      color: var(--clr-php);
      font-size: 12.7rem;
+     margin: 1.2rem 0;
  }
 
  #projects{
