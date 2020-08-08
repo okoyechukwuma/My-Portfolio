@@ -297,7 +297,7 @@ img{
 }
 
 .card:hover p{
-    top: 0;
+    top: 1rem;
 }
 
 
