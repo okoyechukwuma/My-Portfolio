@@ -225,7 +225,7 @@ img{
 }
 
 .black-color{
-    color: #000;
+    color: var(--clr-text);
 }
 
 .contact-remove{
